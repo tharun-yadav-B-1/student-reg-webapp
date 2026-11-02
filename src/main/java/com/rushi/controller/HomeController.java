@@ -30,7 +30,7 @@ public class HomeController {
         @Email(message = "Invalid email format")
         private String email;
 
-        @NotEmpty(message = "Phone is required")
+        @NotEmpty(message = "Phone number is required")
         @Pattern(regexp = "^[0-9]{10}$", message = "Phone must be 10 digits")
         private String phone;
 
